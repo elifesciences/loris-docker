@@ -72,6 +72,8 @@ RUN pip install -r requirements.txt
 RUN PYTHONPATH=/opt/loris/ python3 ./bin/setup_directories.py
 
 RUN chown www-data:www-data -R .
+RUN chown www-data:www-data /var/cache/loris
+RUN chown www-data:www-data /usr/local/share/images
 
 # heartbeat
 COPY healthcheck.sh .
