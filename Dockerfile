@@ -35,10 +35,10 @@ RUN python3 -m pip install uwsgi==2.0.18 configobj==5.0.6
 # Install loris
 WORKDIR /opt
 
-RUN wget --quiet https://github.com/loris-imageserver/loris/archive/v3.0.0.zip \
-	&& unzip v3.0.0.zip \
-	&& mv loris-3.0.0 loris \
-	&& rm v3.0.0.zip
+RUN wget --quiet https://github.com/loris-imageserver/loris/archive/v3.2.1.zip \
+	&& unzip v3.2.1.zip \
+	&& mv loris-3.2.1 loris \
+	&& rm v3.2.1.zip
 
 RUN mkdir /usr/local/share/images
 
