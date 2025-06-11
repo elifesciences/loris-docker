@@ -2,4 +2,6 @@ services:
   loris:
     build:
       context: .
+    ports:
+      - 5004:5004
 
