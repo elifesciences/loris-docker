@@ -1,0 +1,5 @@
+services:
+  loris:
+    build:
+      context: .
+
